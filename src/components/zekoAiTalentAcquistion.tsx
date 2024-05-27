@@ -3,18 +3,22 @@ export default function ZekoTalentAcquistionBanner() {
 
     const talentAcquisitionDetails = [
         {
+            id : 0,
             title: "Technology and Product",
             description: "AI-powered analysis and skill matching, ensuring companies stay ahead with the best minds in technology.",
         },
         {
+            id : 1,
             title: "Technology and Product",
             description: "AI-powered analysis and skill matching, ensuring companies stay ahead with the best minds in technology.",
         },
         {
+            id : 2,
             title: "Technology and Product",
             description: "AI-powered analysis and skill matching, ensuring companies stay ahead with the best minds in technology.",
         },
         {
+            id : 3,
             title: "Technology and Product",
             description: "AI-powered analysis and skill matching, ensuring companies stay ahead with the best minds in technology.",
         },
@@ -29,7 +33,7 @@ export default function ZekoTalentAcquistionBanner() {
             <div className="grid md:grid-cols-4 flex gap-20">
                 {
                     talentAcquisitionDetails.map((card) => (
-                        <div className="flex flex-col text-[#dfe4ff] items-center gap-5">
+                        <div className="flex flex-col text-[#dfe4ff] items-center gap-5" key={card.id}>
                             <p>{card.title}</p>
                             <div className="w-[20rem] text-[#c6cbff]">
                                 <p className="text-center text-lg">{card.description}</p>
