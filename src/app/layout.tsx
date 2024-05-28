@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ZekoAiNavBar from "@/components/ui/navbar";
-import { ScrollArea , ScrollBar} from "@/components/ui/scroll-area"
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
+import { Suspense } from "react";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,11 +21,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <ScrollArea className="h-screen">
-        <ZekoAiNavBar/>
-        {children}
-        <ScrollBar/>
-        </ScrollArea>
+        <Suspense fallback={
+          <div className="h-screen w-screen flex justify-center items-center">
+            <p>Loading...</p>
+          </div>
+        }>
+          <ScrollArea className="h-screen">
+            <ZekoAiNavBar />
+            {children}
+            <ScrollBar />
+          </ScrollArea>
+        </Suspense>
       </body>
     </html>
   );
