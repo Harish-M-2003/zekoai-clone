@@ -15,7 +15,7 @@ export default function ZekoBackedByBanner() {
                     <button className="p-3 max-md:hidden px-10 bg-blue-700 text-white rounded-lg">Sign Up</button>
                     <button className="text-white md:border max-md:bg-[#5a59f6] max-md:p-5 p-3 px-10 rounded-lg">Book A Demo</button>    
                 </div>
-                <Image src={"/card.png"} alt="" height={100} width={1000} className="absolute top-0 left-0 right-0 bottom-0 w-full h-full"/>
+                <Image src={"/Card.png"} alt="" height={100} width={1000} className="absolute top-0 left-0 right-0 bottom-0 w-full h-full"/>
             </div>
             <div className="flex justify-center">
                 <p className="font-bold text-[#4f33cc] text-4xl">Backed by</p>
