@@ -15,7 +15,7 @@ export default function ZekoAiFeatures() {
                     <button className="bg-[#6a60eb] transition ease-in-out hover:bg-[#4b34c4] text-white p-4 rounded-xl font-bold">Get Started 🔥</button>
                 </div>
             </div>
-            <div className="grid md:grid-cols-2 my-10 gap-20">
+            <div className="grid md:grid-cols-2 my-10 gap-5 md:gap-20">
                 <div className="flex flex-col gap-5 mt-5">
                     <FeatureCard title="Broaden your Talent Pool" description="Uncover hidden talent pool instantly as AI pinpoints & reachout to qualified candidates beyond your usual networks." className="bg-[#eef0fe] " iconColor="bg-[#9cabfd]" />
                     <FeatureCard title="Faster Hiring with AI Avatars" description="AI Avatars automate key tasks, speeding up the hiring process by screening and interviewing candidates, allowing HR teams to focus on strategic decisions" className="bg-[#f8f5fe]" iconColor="bg-[#cba6fd]" />

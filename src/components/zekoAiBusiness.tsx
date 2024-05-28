@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import { FaFolder } from "react-icons/fa";
-import { ScrollArea } from "@/components/ui/scroll-area"
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
 
 function BusinessCard({ className, icon, description }: { className?: string, icon: JSX.Element, description: string }) {
     return (
@@ -85,15 +85,8 @@ export default function ZekoAiBusiness() {
                 <h1 className="text-white font-bold text-4xl text-center">Driving Impactful Business Growth with a</h1>
                 <p className="font-bold text-lg text-[#392d82] bg-[#c6cbff] rounded-lg p-2">Powerful Suite Of Products</p>
             </div>
-            {/* <div className="max-md:hidden my-4 grid grid-cols-10 ">
-                {
-                    businessCards.map((card) => (
-                        <BusinessCard icon={card.icon} description={card.description} key={card.id}/>
-                    ))
-                }
-            </div> */}
-            <div className="">
-                <ScrollArea className="">
+            <div className="h-full w-full">
+                <ScrollArea >
                     <div className="flex w-max space-x-4 p-4">
                         {
                             businessCards.map((card) => (
@@ -101,6 +94,7 @@ export default function ZekoAiBusiness() {
                             ))
                         }
                     </div>
+                    <ScrollBar/>
                 </ScrollArea>
             </div>
             <div className="flex justify-center pt-5">
