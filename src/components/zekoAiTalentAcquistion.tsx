@@ -1,24 +1,36 @@
+import { GoGear } from "react-icons/go";
+import { FaDollarSign } from "react-icons/fa";
+import { FaTag } from "react-icons/fa6";
+import { PiPipeWrenchLight } from "react-icons/pi";
 
 export default function ZekoTalentAcquistionBanner() {
 
     const talentAcquisitionDetails = [
         {
             id : 0,
+            icon : <GoGear/>,
+            style : "bg-gradient-to-tr from-red-500 from-40% to-white",
             title: "Technology and Product",
             description: "AI-powered analysis and skill matching, ensuring companies stay ahead with the best minds in technology.",
         },
         {
             id : 1,
+            icon : <FaDollarSign />,
+            style : "bg-gradient-to-tr from-[#9e6af1] from-40% to-white to-100%",
             title: "Technology and Product",
             description: "AI-powered analysis and skill matching, ensuring companies stay ahead with the best minds in technology.",
         },
         {
             id : 2,
+            icon : <FaTag/>,
+            style : "bg-gradient-to-tr from-[#5cbc8f] from-40% to-white to-100%",
             title: "Technology and Product",
             description: "AI-powered analysis and skill matching, ensuring companies stay ahead with the best minds in technology.",
         },
         {
             id : 3,
+            icon : <PiPipeWrenchLight/>,
+            style : "bg-gradient-to-tr from-[#9e6af1] from-40% to-white to-100%",
             title: "Technology and Product",
             description: "AI-powered analysis and skill matching, ensuring companies stay ahead with the best minds in technology.",
         },
@@ -34,6 +46,9 @@ export default function ZekoTalentAcquistionBanner() {
                 {
                     talentAcquisitionDetails.map((card) => (
                         <div className="flex flex-col text-[#dfe4ff] items-center gap-5" key={card.id}>
+                            <div className={"p-4 rounded-[100px] "+card.style}>
+                                <p className="text-4xl">{card.icon}</p>
+                            </div>
                             <p>{card.title}</p>
                             <div className="w-[20rem] text-[#c6cbff]">
                                 <p className="text-center text-lg">{card.description}</p>

@@ -5,7 +5,7 @@ export default function ZekoAiFooter() {
         <div className="bg-[#efe8fd] w-screen footer-font-color px-8 md:px-32 pt-10 flex flex-col md:gap-7">
             <div className="w-full md:flex justify-between gap-5">
                 <div className="flex flex-col gap-5">
-                    <Image src={"/logo.webp"} alt="" width={100} height={100}/>
+                    <Image src={"/logo.webp"} alt="" width={190} height={190}/>
                     <p className="text-xl font-bold">Revolutionising Recruitment</p>
                     <div className="flex flex-col gap-2 text-lg">
                         <p>Metro station, H-294, Building 2, Krastay Cowork</p>
@@ -51,7 +51,7 @@ export default function ZekoAiFooter() {
             <div>
                 <div className="flex justify-between p-10  items-center border-t-2  border-[#6926c8]">
                     <div>
-                        <p>&copy; 2024 Zeko.Ai All rights reserved.</p>
+                        <p className="max-md:text-sm">&copy; 2024 Zeko.Ai All rights reserved.</p>
                     </div>
                     <div className="sm:block hidden">
                         <p className="max-md:text-xs">Made with ❤️ in india.</p>
