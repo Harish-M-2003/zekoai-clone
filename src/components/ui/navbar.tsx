@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ZekoAiNavBar() {
     return (
-        <div className="w-screen md:px-16 px-5 py-2 max-md:py-4 fixed bg-white flex justify-between items-center">
+        <div className="w-screen md:px-16 px-5 py-2 max-md:py-4 border-b-2 z-[10] fixed bg-white flex justify-between items-center">
             <div>
                 <Image src={"/logo.webp"} alt="" height={100} width={100} />
             </div>

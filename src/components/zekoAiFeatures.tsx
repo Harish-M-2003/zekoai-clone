@@ -15,15 +15,15 @@ export default function ZekoAiFeatures() {
                     <button className="bg-[#6a60eb] transition ease-in-out hover:bg-[#4b34c4] text-white p-4 rounded-xl font-bold">Get Started 🔥</button>
                 </div>
             </div>
-            <div className="gap-5 grid md:grid-cols-2 my-10">
-                {/* <div className="md:flex  gap-5 md:flex-col"> */}
-                    <FeatureCard className="bg-[#eef0fe] " />
-                    <FeatureCard className="bg-[#efe8fd] " />
-                {/* </div> */}
-                {/* <div className="md:flex gap-5 md:flex-col md:mt-8"> */}
-                    <FeatureCard className="bg-[#f8f5fe]" />
-                    <FeatureCard className="bg-[#dee4fd]" />
-                {/* </div> */}
+            <div className="grid md:grid-cols-2 my-10 gap-20">
+                <div className="flex flex-col gap-5 mt-5">
+                    <FeatureCard title="Broaden your Talent Pool" description="Uncover hidden talent pool instantly as AI pinpoints & reachout to qualified candidates beyond your usual networks." className="bg-[#eef0fe] " iconColor="bg-[#9cabfd]" />
+                    <FeatureCard title="Faster Hiring with AI Avatars" description="AI Avatars automate key tasks, speeding up the hiring process by screening and interviewing candidates, allowing HR teams to focus on strategic decisions" className="bg-[#f8f5fe]" iconColor="bg-[#cba6fd]" />
+                </div>
+                <div className="flex flex-col gap-5">
+                    <FeatureCard title="Stop Spending Hours on Irrelevant Profiles" description="Utilize advanced AI algorithms, from sourcing to interviews, ensuring that candidates who move forward are those best matched to the job & culture" className="bg-[#efe8fd] " iconColor="bg-[#cba6fd]" />
+                    <FeatureCard title="Data-Driven Insights for Key Decisions" description="Leverage powerful talent analytics for insightful hiring decisions, improving your time to hire and overall return on investment.." className="bg-[#dee4fd]" iconColor="bg-[#9cabfd]" />
+                </div>
             </div>
         </div>
     );

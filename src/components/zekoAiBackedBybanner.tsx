@@ -7,8 +7,7 @@ import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 export default function ZekoBackedByBanner() {
     return (
         <div className="w-screen flex flex-col gap-10 pb-20">
-            <div className="flex max-md:flex-col max-md:text-center gap-5 justify-between items-center w-full h-[12em] p-10">
-                {/* <Image src={"/card.png"} alt="" width={1000} height={500}/> */}
+            <div className="flex max-md:flex-col max-md:text-center gap-5 justify-between items-center w-full bg-[url('/card.png')] h-[12em] p-10">
                 <div className="md:w-[35em] h-full">
                     <p className="text-white md:text-4xl text-xl max-md:font-bold">Start a new, effortless hiring adventure now.</p>
                 </div>

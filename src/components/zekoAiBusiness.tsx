@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import { FaFolder } from "react-icons/fa";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
+import { ScrollArea } from "@/components/ui/scroll-area"
 
 function BusinessCard({ className, icon, description }: { className?: string, icon: JSX.Element, description: string }) {
     return (
@@ -9,7 +9,7 @@ function BusinessCard({ className, icon, description }: { className?: string, ic
             <div className="flex justify-center items-center text-white h-[3.5em] w-[3.5em] rounded-[300px] bg-gradient-to-tr from-[#392d82] to-[#9799f4]">
                 {icon}
             </div>
-            <div className="text-lg text-white">
+            <div className="text-xs text-white">
                 <p>{description}</p>
             </div>
         </div>
@@ -20,6 +20,11 @@ export default function ZekoAiBusiness() {
 
     const businessCards = [
         {
+            id: 0,
+            icon: <FaFolder />,
+            description: "Invite",
+        },
+        {
             id: 1,
             icon: <FaFolder />,
             description: "Application",
@@ -27,12 +32,48 @@ export default function ZekoAiBusiness() {
         {
             id: 2,
             icon: <FaFolder />,
-            description: "Application",
+            description: "Data Analysis",
         },
         {
             id: 3,
             icon: <FaFolder />,
-            description: "Application",
+            description: "Integration",
+        },
+        {
+            id: 4,
+            icon: <FaFolder />,
+            description: "Head Hunt",
+        },
+        {
+            id: 5,
+            icon: <FaFolder />,
+            description: "Job Posting",
+        },
+        {
+            id: 6,
+            icon: <FaFolder />,
+            description: "Job Posting",
+        },
+        {
+            id: 7,
+            icon: <FaFolder />,
+            description: "HR Screening",
+        },
+        {
+            id: 8,
+            icon: <FaFolder />,
+            description: "Auto Screening",
+        },
+        {
+            id: 9,
+            icon: <FaFolder />,
+            description: "Auto Interviews",
+        },
+        
+        {
+            id: 10,
+            icon: <FaFolder />,
+            description: "Interview Reports",
         },
         
     ];
@@ -44,14 +85,14 @@ export default function ZekoAiBusiness() {
                 <h1 className="text-white font-bold text-4xl text-center">Driving Impactful Business Growth with a</h1>
                 <p className="font-bold text-lg text-[#392d82] bg-[#c6cbff] rounded-lg p-2">Powerful Suite Of Products</p>
             </div>
-            <div className="max-md:hidden my-4 grid grid-cols-10 ">
+            {/* <div className="max-md:hidden my-4 grid grid-cols-10 ">
                 {
                     businessCards.map((card) => (
                         <BusinessCard icon={card.icon} description={card.description} key={card.id}/>
                     ))
                 }
-            </div>
-            <div className="md:hidden">
+            </div> */}
+            <div className="">
                 <ScrollArea className="">
                     <div className="flex w-max space-x-4 p-4">
                         {
@@ -60,7 +101,6 @@ export default function ZekoAiBusiness() {
                             ))
                         }
                     </div>
-                    <ScrollBar orientation="horizontal" />
                 </ScrollArea>
             </div>
             <div className="flex justify-center pt-5">

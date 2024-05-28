@@ -1,16 +1,16 @@
 import { GoAlert } from "react-icons/go";
 
-export default function FeatureCard({ className = "" }: { className?: string }) {
+export default function FeatureCard({ className = "" , iconColor = "" , title = "" , description = ""}: { className?: string , iconColor? : string , title : string , description : string}) {
     return (
-        <div className={className + " rounded-xl p-10 gap-5 flex flex-col hover:scale-110 transition ease-in-out"}>
+        <div className={className + " rounded-xl p-10 gap-5 flex flex-col hover:scale-110 transition ease-in-out h-[20em] w-[20em]"}>
             <div className="flex gap-2 items-center ">
-                <div className="p-2 flex items-center align-items rounded-[200px]">
+                <div className={"p-2 flex items-center align-items rounded-[200px] " + iconColor }>
                     <GoAlert />
                 </div>
-                <p className="font-bold">Title</p>
+                <p className="font-bold">{title}</p>
             </div>
             <div>
-                <p>Uncover hidden talent pool instantly as AI pinpoints & reachout to qualified candidates beyond your usual networks.</p>
+                <p>{description}</p>
             </div>
         </div>
     );

@@ -17,22 +17,22 @@ export default function ZekoTalentAcquistionBanner() {
             id : 1,
             icon : <FaDollarSign />,
             style : "bg-gradient-to-tr from-[#9e6af1] from-40% to-white to-100%",
-            title: "Technology and Product",
-            description: "AI-powered analysis and skill matching, ensuring companies stay ahead with the best minds in technology.",
+            title: "Finance, Accounts & HR",
+            description: "Excel at sourcing & auto-interviewing candidates with the intricate blend of analytical and soft skills.",
         },
         {
             id : 2,
             icon : <FaTag/>,
             style : "bg-gradient-to-tr from-[#5cbc8f] from-40% to-white to-100%",
-            title: "Technology and Product",
-            description: "AI-powered analysis and skill matching, ensuring companies stay ahead with the best minds in technology.",
+            title: "Sales and Support",
+            description: "Rely on conversational AI interviews to evaluate interpersonal skills, and the strategic thinking at bulk, before talking to anyone.",
         },
         {
             id : 3,
             icon : <PiPipeWrenchLight/>,
             style : "bg-gradient-to-tr from-[#9e6af1] from-40% to-white to-100%",
-            title: "Technology and Product",
-            description: "AI-powered analysis and skill matching, ensuring companies stay ahead with the best minds in technology.",
+            title: "Blue and Gray Collar",
+            description: "Precise evaluation, of training effectiveness, in local language, to assess skill acquisition & alignment with operational standards.",
         },
     ];
 
