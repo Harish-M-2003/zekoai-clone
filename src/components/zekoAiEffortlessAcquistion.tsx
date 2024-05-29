@@ -1,31 +1,9 @@
-import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
+
 import { ScrollArea, ScrollBar } from "./ui/scroll-area";
 import TestimonialCard from "./ui/testimonialCard";
+import { testimonial } from "@/data/testimonial";
 
 export default function ZekoAiEffortlessAcquistion() {
-
-    const testimonialCard = [
-        {
-            id: 1,
-            name: "Roshinee",
-            content: `
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        `,
-            designation: "Senior Engineering Manager"
-        },
-        {
-            id: 2,
-            name: "Roshinee",
-            content: `
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        `,
-            designation: "Senior Engineering Manager"
-        },
-    ];
 
     return (
         <div className="h-full w-screen md:grid md:grid-cols-2 px-12 gap-10 pb-20">
@@ -50,12 +28,12 @@ export default function ZekoAiEffortlessAcquistion() {
                 <ScrollArea>
                     <div className="flex w-max space-x-4 p-4 py-10">
                         {
-                            testimonialCard.map((testimonial) => (
+                            testimonial.map((item) => (
                                 <TestimonialCard
-                                    key={testimonial.id}
-                                    content={testimonial.content}
-                                    testimonialName={testimonial.name}
-                                    designation={testimonial.designation}
+                                    key={item.id}
+                                    content={item.content}
+                                    testimonialName={item.name}
+                                    designation={item.designation}
                                 />
 
                             ))}
@@ -66,13 +44,12 @@ export default function ZekoAiEffortlessAcquistion() {
             <div className="relative max-md:hidden">
 
                 <div className="absolute left-0 top-0 z-[6] right-0 bg-gradient-to-b from-white via-white to-transparent h-[200px]" />
-
                 <div className="grid grid-cols-2 gap-5 max-md:hidden">
                     {/*@ts-ignore*/}
                     <marquee direction="up">
-                        <div className="flex flex-col gap-5">
+                        <div className="flex flex-col gap-5 mt-5">
                             {
-                                testimonialCard.map((testimonial) => (
+                                testimonial.map((testimonial) => (
                                     <TestimonialCard
                                         key={testimonial.id}
                                         content={testimonial.content}
@@ -89,7 +66,7 @@ export default function ZekoAiEffortlessAcquistion() {
                     <marquee direction="up" className="max-md:hidden">
                         <div className="flex flex-col gap-5">
                             {
-                                testimonialCard.map((testimonial) => (
+                                testimonial.map((testimonial) => (
                                     <TestimonialCard
                                         key={testimonial.id}
                                         content={testimonial.content}
@@ -103,7 +80,7 @@ export default function ZekoAiEffortlessAcquistion() {
                         {/*@ts-ignore*/}
                     </marquee>
 
-                    <div className="absolute bottom-0 left-0 top-[520px] right-0 bg-gradient-to-t from-white via-white to-transparent h-[200px]" />
+                    <div className="absolute bottom-0 left-0  right-0 bg-gradient-to-t from-white via-white to-transparent h-[200px]" />
                 </div>
             </div>
         </div>

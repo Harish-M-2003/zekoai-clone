@@ -1,10 +1,8 @@
-"use client";
-import Image from "next/image";
-import Autoplay from "embla-carousel-autoplay"
-import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 
+import Image from "next/image";
 
 export default function ZekoBackedByBanner() {
+    
     return (
         <div className="w-screen flex flex-col gap-10 pb-20">
             <div className="relative flex max-md:flex-col mb-10 max-md:text-center gap-5 justify-between items-center h-[12em] p-10">
@@ -15,7 +13,7 @@ export default function ZekoBackedByBanner() {
                     <button className="p-3 max-md:hidden px-10 bg-blue-700 text-white rounded-lg">Sign Up</button>
                     <button className="text-white md:border max-md:bg-[#5a59f6] max-md:p-5 p-3 px-10 rounded-lg">Book A Demo</button>
                 </div>
-                <Image src={"/Card.png"} alt="" height={100} width={1000} className="absolute top-0 left-0 right-0 bottom-0 w-full h-full" />
+                <Image src={"/Card.png"} alt="" height={100} width={1000} className="absolute top-0 left-0 right-0 bottom-0 w-full h-[12em] max-md:h-[15em]" />
             </div>
             <div className="flex justify-center">
                 <p className="font-bold text-[#4f33cc] text-4xl">Backed by</p>
@@ -37,7 +35,6 @@ export default function ZekoBackedByBanner() {
                         </div>
                     {/*@ts-ignore*/}
                     </marquee>
-
                 </div>
             </div>
         </div>

@@ -13,24 +13,24 @@ export default function ZekoAiLanding() {
                         <p className="md:text-2xl text-[#9257f0] font-[500] max-md:text-center">Experience the Future of Hiring with AI-<br />Powered Precision and Speed </p>
                     </div>
                     <div className="flex items-start flex-col gap-5">
-                        <div className="flex border-2 gap-5 border-red-400 rounded-xl px-7 md:px-4 py-2">
+                        <div className="flex border-2 gap-5 border-[#ed6c5b] rounded-xl px-7 md:px-4 py-2">
                             <div className="flex justify-center items-center bg-red-500 text-white rounded-[10rem] px-2">
                                 <p className="font-bold text-4xl p-1">P</p>
                             </div>
-                            <div className="flex text-red-500 flex-col justify-start md:justify-center">
+                            <div className="flex text-[#ed6c5b] flex-col justify-center md:justify-center">
                                 <p className="text-xs">#1 PRODUCT OF THE WEEK</p>
-                                <p className="font-bold text-xs md:text-xl">Artificial Intelligence</p>
+                                <p className="font-bold text-lg md:text-xl">Artificial Intelligence</p>
                             </div>
                         </div>
                     </div>
 
                     <div className="flex gap-5 md:w-[70%] w-full max-md:flex-col items-center">
-                        <input className="border border-gray-200 p-2 rounded-lg w-full" placeholder="Enter your Work Email"></input>
-                        <button className="bg-[#4337ec] text-white p-2 px-4 rounded-lg w-[50%]">Sign Up</button>
+                        <input className="border border-gray-200 p-4 rounded-lg w-full" placeholder="Enter your Work Email"></input>
+                        <button className="transition ease-in-out bg-[#6a60eb] hover:bg-[#4b34c4] text-white p-4 px-4 rounded-lg w-[50%]">Sign Up</button>
                     </div>
                 </div>
                 <div className="flex justify-center items-center">
-                    <Image src={"/grid-logo.png"} alt="" height={700} width={700} />
+                    <Image src={"/grid-logo.png"} alt="" height={800} width={800} />
                 </div>
             </div>
             <div className="mb-10 w-full max-md:pt-5 flex flex-col justify-center items-center">
