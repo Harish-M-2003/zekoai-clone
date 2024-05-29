@@ -2,6 +2,13 @@
 import Image from "next/image";
 import { FaFolder } from "react-icons/fa";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
+import { BsGraphUp } from "react-icons/bs";
+import { CiSettings } from "react-icons/ci";
+import { LuSearch } from "react-icons/lu";
+import { IoBagHandleOutline } from "react-icons/io5";
+import { BsPersonCheckFill } from "react-icons/bs";
+import { MdSpatialAudioOff } from "react-icons/md";
+import { ImFileText2 } from "react-icons/im";
 
 function BusinessCard({ className, icon, description }: { className?: string, icon: JSX.Element, description: string }) {
     return (
@@ -31,48 +38,43 @@ export default function ZekoAiBusiness() {
         },
         {
             id: 2,
-            icon: <FaFolder />,
+            icon: <BsGraphUp />,
             description: "Data Analysis",
         },
         {
             id: 3,
-            icon: <FaFolder />,
+            icon:<CiSettings />,
             description: "Integration",
         },
         {
             id: 4,
-            icon: <FaFolder />,
+            icon: <LuSearch />,
             description: "Head Hunt",
         },
         {
             id: 5,
-            icon: <FaFolder />,
+            icon: <IoBagHandleOutline />,
             description: "Job Posting",
         },
         {
             id: 6,
-            icon: <FaFolder />,
-            description: "Job Posting",
+            icon: <BsPersonCheckFill />,
+            description: "HR Screening",
         },
         {
             id: 7,
             icon: <FaFolder />,
-            description: "HR Screening",
-        },
-        {
-            id: 8,
-            icon: <FaFolder />,
             description: "Auto Screening",
         },
         {
-            id: 9,
-            icon: <FaFolder />,
+            id: 8,
+            icon: <MdSpatialAudioOff />,
             description: "Auto Interviews",
         },
         
         {
-            id: 10,
-            icon: <FaFolder />,
+            id: 9,
+            icon: <ImFileText2 />,
             description: "Interview Reports",
         },
         
