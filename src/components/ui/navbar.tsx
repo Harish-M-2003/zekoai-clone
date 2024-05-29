@@ -16,7 +16,7 @@ export default function ZekoAiNavBar() {
             </div>
             <div className="flex gap-5 px-5 button-color max-md:hidden">
                 <button className="bg-[#6a60eb] hover:bg-[#4b34c4] transition ease-in-out text-white p-3 rounded-xl font-bold">Sign Up</button>
-                <button className=" hover:bg-[#4b34c4] border hover:text-white transition ease-in-out p-3 rounded-xl font-bold">Login in</button>
+                <button className=" hover:bg-[#4b34c4] border hover:text-white transition ease-in-out p-3 rounded-xl font-bold">Login</button>
             </div>
         </div>
     );
